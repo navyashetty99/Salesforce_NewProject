@@ -1,0 +1,24 @@
+<template>
+    
+    <lightning-card  title="Hello">
+        <div class="slds-m-left_small">
+            <div>Hello World</div>
+            <div>{fullName}</div>
+                <input type ="text" onkeyup={changeTitle}>
+            </div>
+    </lightning-card>
+    <lightning-card  title="Tracker">
+        <div class="slds-m-left_small">
+                <input type ="text" onkeyup={userAssign}>
+                <input type ="text" onkeyup={userAge}>
+        <div>{fullName},{title},{users.name},{users.age}</div>
+        </div>
+    </lightning-card>
+    <lightning-card  title="Getter">
+        <div class="slds-m-left_small">
+            <div>{firstPerson}</div>
+            <div>{multiply}</div>
+        </div>
+        
+    </lightning-card>
+</template>
